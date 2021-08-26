@@ -120,6 +120,8 @@ public class EventJump implements Listener {
 			ItemStack it = e.getCurrentItem();
 			Player player = (Player) e.getWhoClicked();
 			
+			if(it == null) return;
+			
 			if(it.getType() == Material.COMPASS && it.hasItemMeta() && it.getItemMeta().hasDisplayName() && it.getItemMeta().getDisplayName().equalsIgnoreCase("§5Teleporte")){
 				e.setCancelled(true);
 				if(main.loc.containsKey(player)) {

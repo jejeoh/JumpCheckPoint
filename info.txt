@@ -1,0 +1,3 @@
+Plugin developper par jejeoh:
+
+- Il faut mettre dans le plugin les coordonnées du spawn !
